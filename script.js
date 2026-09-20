@@ -1,34 +1,56 @@
 ```javascript
-// Menu mobile
+// =============================
+// MENU MOBILE
+// =============================
+
 function toggleMenu() {
-    const menu = document.querySelector(".nav-menu");
-    menu.classList.toggle("show");
+
+    const navMenu = document.getElementById("navMenu");
+
+    navMenu.classList.toggle("show");
+
 }
 
-// Form kontak
+
+// =============================
+// FORM KONTAK
+// =============================
+
 function kirimPesan(event) {
+
     event.preventDefault();
 
-    const nama = document.getElementById("nama").value;
+    const nama =
+        document.getElementById("nama").value;
 
     alert(
-        "Terima kasih, " + nama +
+        "Terima kasih, " +
+        nama +
         "! Pesan Anda berhasil dikirim."
     );
 
     document.querySelector(".contact-form").reset();
+
 }
 
-// Efek navbar saat scroll
-window.addEventListener("scroll", function () {
 
-    const navbar = document.querySelector(".navbar");
+// =============================
+// TUTUP MENU SETELAH KLIK LINK
+// =============================
 
-    if (window.scrollY > 50) {
-        navbar.style.padding = "12px 8%";
-    } else {
-        navbar.style.padding = "18px 8%";
-    }
+const links =
+    document.querySelectorAll(".nav-menu a");
+
+links.forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        const navMenu =
+            document.getElementById("navMenu");
+
+        navMenu.classList.remove("show");
+
+    });
 
 });
 ```
