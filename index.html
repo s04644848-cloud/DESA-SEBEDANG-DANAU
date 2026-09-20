@@ -4,93 +4,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Desa Sebedang | Beranda</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
+<!-- NAVBAR -->
+<header class="header">
     <nav class="navbar">
-        <div class="logo">🌿 Desa Sebedang</div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html" class="active">Beranda</a></li>
-            <li><a href="profil.html">Profil</a></li>
-            <li><a href="wisata.html">Wisata</a></li>
-            <li><a href="berita.html">Berita</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
+        <a href="index.html" class="logo">
+            🌿 Desa Sebedang
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+            <li>
+                <a href="index.html" class="active">Beranda</a>
+            </li>
+
+            <li>
+                <a href="profil.html">Profil</a>
+            </li>
+
+            <li>
+                <a href="wisata.html">Wisata</a>
+            </li>
+
+            <li>
+                <a href="berita.html">Berita</a>
+            </li>
+
+            <li>
+                <a href="kontak.html">Kontak</a>
+            </li>
         </ul>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </nav>
 </header>
 
+
+<!-- HERO -->
 <section class="hero">
+
     <div class="hero-content">
-        <p class="small-title">SELAMAT DATANG DI</p>
-        <h1>Desa Sebedang</h1>
-        <p>
-            Mengenal keindahan alam, budaya, dan kehidupan masyarakat
-            Desa Sebedang, Dusun Dare Nandung.
+
+        <p class="hero-subtitle">
+            SELAMAT DATANG DI
         </p>
 
-        <a href="profil.html" class="btn">Jelajahi Desa →</a>
+        <h1>
+            Desa Sebedang
+        </h1>
+
+        <p class="hero-description">
+            Website informasi Desa Sebedang,
+            Dusun Dare Nandung, Kabupaten Sambas.
+            Kenali potensi, wisata, budaya dan kehidupan masyarakat desa.
+        </p>
+
+        <a href="profil.html" class="btn">
+            Jelajahi Desa →
+        </a>
+
     </div>
+
 </section>
 
-<section class="welcome">
+
+<!-- TENTANG -->
+<section class="section">
+
     <div class="section-title">
+
         <p>TENTANG DESA</p>
-        <h2>Desa yang Indah dan Asri</h2>
+
+        <h2>
+            Selamat Datang di Desa Sebedang
+        </h2>
+
     </div>
 
-    <div class="welcome-content">
-        <div>
-            <h3>🌱 Selamat Datang</h3>
+
+    <div class="about-home">
+
+        <div class="about-text">
+
+            <h3>
+                🌱 Desa yang Asri
+            </h3>
+
             <p>
-                Website ini menjadi media informasi mengenai Desa Sebedang.
-                Temukan informasi tentang profil desa, wisata, berita,
-                kegiatan masyarakat, serta informasi kontak desa.
+                Desa Sebedang merupakan sebuah desa yang memiliki
+                lingkungan alami dan kehidupan masyarakat yang
+                menjunjung tinggi kebersamaan.
             </p>
+
             <p>
-                Dengan kekayaan alam dan kehidupan masyarakat yang harmonis,
-                Desa Sebedang memiliki potensi untuk terus berkembang.
+                Melalui website ini, masyarakat dapat memperoleh
+                informasi mengenai profil desa, potensi wisata,
+                berita kegiatan, serta informasi kontak.
             </p>
+
+            <a href="profil.html" class="btn">
+                Lihat Profil
+            </a>
+
         </div>
 
-        <div class="info-box">
-            <div>
-                <h3>🌳</h3>
-                <p>Alam Asri</p>
+
+        <div class="feature-box">
+
+            <div class="feature">
+                <span>🌳</span>
+                <h3>Alam</h3>
+                <p>Lingkungan yang hijau dan asri.</p>
             </div>
-            <div>
-                <h3>🤝</h3>
-                <p>Masyarakat</p>
+
+            <div class="feature">
+                <span>🤝</span>
+                <h3>Masyarakat</h3>
+                <p>Kebersamaan dan gotong royong.</p>
             </div>
-            <div>
-                <h3>🏡</h3>
-                <p>Desa Nyaman</p>
+
+            <div class="feature">
+                <span>🏡</span>
+                <h3>Desa</h3>
+                <p>Tempat yang nyaman untuk masyarakat.</p>
             </div>
+
         </div>
+
     </div>
+
 </section>
 
+
+<!-- QUOTE -->
 <section class="quote">
-    <div>
-        <h2>"Bersama Membangun Desa"</h2>
-        <p>
-            Menjaga alam, melestarikan budaya, dan menciptakan desa
-            yang maju serta nyaman untuk masyarakat.
-        </p>
-    </div>
+
+    <h2>
+        Bersama Membangun Desa
+    </h2>
+
+    <p>
+        Menjaga alam, melestarikan budaya,
+        dan membangun desa untuk masa depan.
+    </p>
+
 </section>
 
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Desa Sebedang | Dusun Dare Nandung</p>
+
+    <p>
+        © 2026 Desa Sebedang | Dusun Dare Nandung
+    </p>
+
 </footer>
 
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
 ```
