@@ -1,0 +1,94 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Desa Sebedang</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">🌿 Desa Sebedang</div>
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="wisata.html">Wisata</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>Hubungi Kami</h1>
+    <p>Silakan hubungi kami untuk informasi lebih lanjut</p>
+</section>
+
+<section class="content-section">
+
+    <div class="contact-grid">
+
+        <div class="contact-info">
+
+            <span class="label">KONTAK DESA</span>
+            <h2>Informasi Kontak</h2>
+
+            <div class="contact-item">
+                <div>📍</div>
+                <div>
+                    <h3>Alamat</h3>
+                    <p>Desa Sebedang, Dusun Dare Nandung, Kabupaten Sambas</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div>📞</div>
+                <div>
+                    <h3>Telepon</h3>
+                    <p>08XX-XXXX-XXXX</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div>✉️</div>
+                <div>
+                    <h3>Email</h3>
+                    <p>desasebedang@email.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <form class="contact-form" onsubmit="kirimPesan(event)">
+
+            <h2>Kirim Pesan</h2>
+
+            <input type="text" id="nama" placeholder="Nama lengkap" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <textarea id="pesan" rows="6" placeholder="Tulis pesan..." required></textarea>
+
+            <button type="submit" class="btn">Kirim Pesan</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Desa Sebedang | Dusun Dare Nandung</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+```
