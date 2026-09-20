@@ -1,87 +1,199 @@
 ```html
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisata Desa Sebedang</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Wisata | Desa Sebedang</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">🌿 Desa Sebedang</div>
 
-        <ul class="nav-menu">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="profil.html">Profil</a></li>
-            <li><a href="wisata.html" class="active">Wisata</a></li>
-            <li><a href="berita.html">Berita</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            🌿 Desa Sebedang
+        </a>
+
+        <button class="menu-toggle"
+                onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+
+            <li>
+                <a href="index.html">
+                    Beranda
+                </a>
+            </li>
+
+            <li>
+                <a href="profil.html">
+                    Profil
+                </a>
+            </li>
+
+            <li>
+                <a href="wisata.html"
+                   class="active">
+                    Wisata
+                </a>
+            </li>
+
+            <li>
+                <a href="berita.html">
+                    Berita
+                </a>
+            </li>
+
+            <li>
+                <a href="kontak.html">
+                    Kontak
+                </a>
+            </li>
+
         </ul>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </nav>
+
 </header>
 
+
 <section class="page-header">
-    <h1>Wisata & Keindahan Alam</h1>
-    <p>Jelajahi potensi alam Desa Sebedang</p>
+
+    <h1>
+        Wisata Desa
+    </h1>
+
+    <p>
+        Keindahan alam Desa Sebedang
+    </p>
+
 </section>
 
-<section class="content-section">
+
+<section class="section">
 
     <div class="section-title">
-        <p>DESTINASI</p>
-        <h2>Keindahan Desa</h2>
+
+        <p>
+            POTENSI DESA
+        </p>
+
+        <h2>
+            Keindahan Alam
+        </h2>
+
     </div>
+
 
     <div class="wisata-grid">
 
-        <div class="wisata-card">
-            <img src="img/wisata1.jpg" alt="Keindahan alam">
-            <div class="wisata-info">
-                <h3>🌳 Keindahan Alam</h3>
-                <p>
-                    Lingkungan hijau dan suasana alami yang cocok
-                    untuk menikmati ketenangan.
-                </p>
-            </div>
-        </div>
 
         <div class="wisata-card">
-            <img src="img/wisata2.jpg" alt="Pemandangan desa">
-            <div class="wisata-info">
-                <h3>🏞️ Pemandangan Desa</h3>
+
+            <img src="img/wisata1.jpg"
+                 alt="Wisata alam">
+
+            <div class="wisata-content">
+
+                <span>
+                    🌳 ALAM
+                </span>
+
+                <h3>
+                    Keindahan Alam
+                </h3>
+
                 <p>
-                    Nikmati pemandangan alam dan suasana pedesaan
-                    yang masih asri.
+                    Nikmati suasana alam yang hijau,
+                    sejuk, dan masih asri.
                 </p>
+
             </div>
+
         </div>
 
+
         <div class="wisata-card">
-            <img src="img/wisata3.jpg" alt="Lingkungan desa">
-            <div class="wisata-info">
-                <h3>🌿 Lingkungan Asri</h3>
+
+            <img src="img/wisata2.jpg"
+                 alt="Pemandangan desa">
+
+            <div class="wisata-content">
+
+                <span>
+                    🏞️ PEMANDANGAN
+                </span>
+
+                <h3>
+                    Pemandangan Desa
+                </h3>
+
                 <p>
-                    Suasana yang nyaman dengan lingkungan yang
-                    hijau dan alami.
+                    Pemandangan pedesaan yang
+                    memberikan suasana tenang.
                 </p>
+
             </div>
+
         </div>
+
+
+        <div class="wisata-card">
+
+            <img src="img/wisata3.jpg"
+                 alt="Lingkungan desa">
+
+            <div class="wisata-content">
+
+                <span>
+                    🌿 LINGKUNGAN
+                </span>
+
+                <h3>
+                    Lingkungan Asri
+                </h3>
+
+                <p>
+                    Lingkungan desa yang nyaman
+                    dan cocok untuk bersantai.
+                </p>
+
+            </div>
+
+        </div>
+
 
     </div>
 
 </section>
 
+
 <footer>
-    <p>© 2026 Desa Sebedang | Dusun Dare Nandung</p>
+
+    <p>
+        © 2026 Desa Sebedang | Dusun Dare Nandung
+    </p>
+
 </footer>
 
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
 ```
