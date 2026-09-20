@@ -2,87 +2,175 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Desa Sebedang</title>
+
+    <title>Profil | Desa Sebedang</title>
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">🌿 Desa Sebedang</div>
+<header class="header">
 
-        <ul class="nav-menu">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="profil.html" class="active">Profil</a></li>
-            <li><a href="wisata.html">Wisata</a></li>
-            <li><a href="berita.html">Berita</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            🌿 Desa Sebedang
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+
+            <li>
+                <a href="index.html">Beranda</a>
+            </li>
+
+            <li>
+                <a href="profil.html" class="active">Profil</a>
+            </li>
+
+            <li>
+                <a href="wisata.html">Wisata</a>
+            </li>
+
+            <li>
+                <a href="berita.html">Berita</a>
+            </li>
+
+            <li>
+                <a href="kontak.html">Kontak</a>
+            </li>
+
         </ul>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </nav>
+
 </header>
 
+
+<!-- PAGE HEADER -->
 <section class="page-header">
+
     <h1>Profil Desa</h1>
-    <p>Mengenal lebih dekat Desa Sebedang</p>
+
+    <p>
+        Mengenal lebih dekat Desa Sebedang
+    </p>
+
 </section>
 
-<section class="content-section">
 
-    <div class="about-grid">
-        <div>
-            <img src="img/desa.jpg" alt="Desa Sebedang">
+<!-- PROFIL -->
+<section class="section">
+
+    <div class="profile">
+
+        <div class="profile-image">
+
+            <img
+                src="img/desa.jpg"
+                alt="Foto Desa Sebedang"
+            >
+
         </div>
 
-        <div>
-            <span class="label">TENTANG KAMI</span>
-            <h2>Desa Sebedang</h2>
+
+        <div class="profile-text">
+
+            <span class="label">
+                TENTANG KAMI
+            </span>
+
+            <h2>
+                Desa Sebedang
+            </h2>
 
             <p>
-                Desa Sebedang merupakan salah satu wilayah yang memiliki
-                keindahan alam dan kehidupan masyarakat yang penuh
-                kebersamaan.
+                Desa Sebedang merupakan salah satu desa
+                yang memiliki potensi alam dan kehidupan
+                masyarakat yang beragam.
             </p>
 
             <p>
-                Dusun Dare Nandung menjadi salah satu bagian dari kehidupan
-                masyarakat desa yang memiliki lingkungan yang asri dan
-                nyaman.
+                Dusun Dare Nandung menjadi bagian dari
+                kehidupan masyarakat desa yang memiliki
+                suasana lingkungan yang nyaman dan asri.
             </p>
 
-            <a href="kontak.html" class="btn">Hubungi Kami</a>
+            <p>
+                Masyarakat desa terus menjaga kebersamaan,
+                gotong royong, serta kelestarian lingkungan.
+            </p>
+
         </div>
+
     </div>
+
+
+    <!-- VISI MISI -->
 
     <div class="visi-misi">
-        <div class="card">
-            <h2>🎯 Visi</h2>
-            <p>
-                Mewujudkan desa yang maju, mandiri, sejahtera,
-                dan tetap menjaga kelestarian lingkungan.
-            </p>
-        </div>
 
         <div class="card">
-            <h2>🌱 Misi</h2>
+
+            <div class="card-icon">
+                🎯
+            </div>
+
+            <h3>
+                Visi
+            </h3>
+
             <p>
-                Meningkatkan kualitas masyarakat, mengembangkan potensi
-                desa, serta menjaga kebersihan dan kelestarian alam.
+                Mewujudkan Desa Sebedang yang maju,
+                mandiri, sejahtera, dan tetap menjaga
+                kelestarian lingkungan.
             </p>
+
         </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🌱
+            </div>
+
+            <h3>
+                Misi
+            </h3>
+
+            <p>
+                Meningkatkan kualitas masyarakat,
+                mengembangkan potensi desa, dan
+                menjaga lingkungan secara bersama-sama.
+            </p>
+
+        </div>
+
     </div>
 
 </section>
 
+
 <footer>
-    <p>© 2026 Desa Sebedang | Dusun Dare Nandung</p>
+
+    <p>
+        © 2026 Desa Sebedang | Dusun Dare Nandung
+    </p>
+
 </footer>
 
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
 ```
